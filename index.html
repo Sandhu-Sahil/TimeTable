@@ -24,7 +24,10 @@
              <td>9:00-9:50 AM</td>
              <td>&nbsp;</td> <!Monday>
              <td>&nbsp;</td> <!Tuesday> 
-             <td><a href=""> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Wednesday>
+             
+             <input type="hidden" value="lsdff5f6" id="1g">
+             <td><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1g"> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Wednesday>
+
              <td>&nbsp;</td> <!Thursday>
              <td><a href="https://meet.google.com/syh-zkzz-hge" target="_blank"> PHY L. <br> AV </a></td> <!Friday>
              <td>&nbsp;</td> <!Saturday>
@@ -33,10 +36,18 @@
          <tr>
              <td>10:00-10:50 AM</td>
              <td><a href="https://meet.google.com/txg-qxzz-get?authuser=0&hs=179" target="_blank"> Maths L. <br> DCB </a></td> <!Monday>
-             <td><a href=""> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Tuesday> 
-             <td rowspan="2"><a href=""> SDF LAB <br> AKB/RJP/SHB <br> MEET ID: psdff5f6 </a></td> <!Wednesday>
+
+             <input type="hidden" value="lsdff5f6" id="1f">
+             <td><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1f"> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Tuesday> 
+
+             <input type="hidden" value="psdff5f6" id="1e">
+             <td rowspan="2"><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1e"> SDF LAB <br> AKB/RJP/SHB <br> MEET ID: psdff5f6 </a></td> <!Wednesday>
+
              <td><a href="https://meet.google.com/iav-xbph-iej?authuser=0&hs=179" target="_blank"> Eng L. <br> A. Banwari </a></td> <!Thursday>
-             <td><a href=""> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Friday>
+
+             <input type="hidden" value="lsdff5f6" id="1d">
+             <td><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1d"> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Friday>
+
              <td rowspan="2"><a href="https://meet.google.com/nkw-gmew-qid" target="_blank"> Eng LAB <br> DV </a></td> <!Saturday>   
          </tr>
 
@@ -65,8 +76,12 @@
              
              <td>&nbsp;</td> <!Tuesday> 
              <td>&nbsp;</td> <!Wednesday>
-             <td><a href=""> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Thursday>
-             <td><a href=""> SDF T. <br> HMB <br> MEET ID: tsdf1f6 </a></td> <!Friday>
+
+             <input type="hidden" value="lsdff5f6" id="1b">
+             <td><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1b"> SDF L. <br> SHB <br> MEET ID: lsdff5f6 </a></td> <!Thursday>
+
+             <input type="hidden" value="tsdf1f6" id="1c">
+             <td><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1c"> SDF T. <br> HMB <br> MEET ID: tsdf1f6 </a></td> <!Friday>
              <td>&nbsp;</td> <!Saturday>  
          </tr>
 
@@ -81,8 +96,11 @@
          </tr>
          <tr>
              <td>3:00-3:50 PM</td>
-             <td rowspan="2"><a href=""> SDF LAB <br> AKB/RJP/SHB <br> MEET ID: psdff6e8 </a></td> <!Monday>
-             <td><a href="https://meet.google.com/txg-qxzz-get?authuser=0&hs=179"> Maths T. <br> DCB </a></td> <!Tuesday> 
+
+             <input type="hidden" value="psdff6e8" id="1a">
+             <td rowspan="2"><a href="https://meet.google.com/" onclick='return ID(this.id)' id="1a"> SDF LAB <br> AKB/RJP/SHB <br> MEET ID: psdff6e8 </a></td> <!Monday>
+
+             <td><a href="https://meet.google.com/txg-qxzz-get?authuser=0&hs=179" target="_blank"> Maths T. <br> DCB </a></td> <!Tuesday> 
              <td><a href="http://meet.google.com/fjg-qifg-ghq" target="_blank"> Phy L. <br> AV </a></td> <!Wednesday>
              <td><a href="https://meet.google.com/hzg-yaoa-hgg" target="_blank"> Phy LAB <br> ANUJ </a></td> <!Thursday>
              <td>&nbsp;</td> <!Friday>
@@ -104,4 +122,16 @@
     </div>
 
   </body>
+
+  <script>
+      function ID(id) 
+        {
+            var i = event.target;
+            document.getElementById(id)
+            var copyText = document.getElementById(id).value;
+            navigator.clipboard.writeText(document.getElementById(id).value);
+            alert("MEET ID copied: " + document.getElementById(id).value);
+        }
+        
+  </script>
 </html>
